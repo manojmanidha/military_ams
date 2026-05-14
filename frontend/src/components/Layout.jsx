@@ -45,7 +45,7 @@ export default function Layout({ children }) {
       <aside style={{ width: sidebarOpen ? 220 : 60, background: '#0c1008', borderRight: '1px solid #1e2818', display: 'flex', flexDirection: 'column', transition: 'width 0.2s', overflow: 'hidden', flexShrink: 0 }}>
         <div style={{ padding: '16px 12px', borderBottom: '1px solid #1e2818', display: 'flex', alignItems: 'center', gap: 10 }}>
           <span style={{ color: '#6b8c3e', flexShrink: 0 }}><Icon name="shield" size={22} /></span>
-          {sidebarOpen && <span style={{ fontSize: 11, fontWeight: 900, letterSpacing: '0.2em', color: '#6b8c3e' }}>MIL-AMS</span>}
+          {sidebarOpen && <span style={{ fontSize: 15, fontWeight: 900, letterSpacing: '0.2em', color: '#6b8c3e' }}>MIL-AMS</span>}
           <button onClick={() => setSidebarOpen(o => !o)} style={{ marginLeft: 'auto', background: 'none', border: 'none', color: '#4a5a3a', cursor: 'pointer', flexShrink: 0 }}>
             <Icon name="menu" size={18} />
           </button>
@@ -53,8 +53,8 @@ export default function Layout({ children }) {
 
         {sidebarOpen && (
           <div style={{ padding: '12px 16px', borderBottom: '1px solid #1e2818' }}>
-            <div style={{ fontSize: 12, fontWeight: 700, color: '#9aaa80', marginBottom: 4 }}>{user?.name}</div>
-            <span style={{ fontSize: 9, fontWeight: 900, letterSpacing: '0.15em', padding: '2px 8px', borderRadius: 4, background: '#1a1f14', color: roleBadgeColor[user?.role] }}>
+            <div style={{ fontSize: 14, fontWeight: 700, color: '#9aaa80', marginBottom: 4 }}>{user?.name}</div>
+            <span style={{ fontSize: 11, fontWeight: 900, letterSpacing: '0.15em', padding: '2px 8px', borderRadius: 4, background: '#1a1f14', color: roleBadgeColor[user?.role] }}>
               {roleLabel[user?.role]}
             </span>
           </div>
