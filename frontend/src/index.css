@@ -1,0 +1,49 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Base font size — increase this one number to scale everything */
+html {
+  font-size: 20px;
+}
+
+body {
+  font-family: 'Courier New', Courier, monospace;
+  background-color: #0e1209;
+  color: #c8d4b0;
+  font-size: 1rem;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0c1008;
+}
+::-webkit-scrollbar-thumb {
+  background: #2e3828;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #4a5a3a;
+}
+
+/* Smooth transitions globally */
+button {
+  transition: all 0.15s ease;
+}
+
+input, select {
+  font-family: 'Courier New', Courier, monospace;
+}
+
+/* Responsive table scroll */
+.table-wrap {
+  overflow-x: auto;
+}
